@@ -22,7 +22,7 @@ public class Graph {
 
         que.add(startId); // Initialize queue.
         distances[startId] = 0;
-        HashSet<Integer> seen = new HashSet<Integer>(); //O(n) space. Could be further optimized. I leave it to you to optimize it.
+        Set seen = new HashSet<Integer>(); //O(n) space. Could be further optimized. I leave it to you to optimize it.
 
         seen.add(startId);
         while(!que.isEmpty()) { // Standard BFS loop.
